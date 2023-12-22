@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: url("../images/library.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*main-wrapper-content-css*/
+
+.box {
+    width: 1400px;
+    height: 720px;
+    background-color: #f6f4e5;
+    color: black;
+    border-radius: 20px;
+    padding: 30px 30px;
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+.contentbox {
+    background: #f6f4e5;
+    text-align: justify;
+    width: 1300px;
+    height: 400px;
+}
+
+.contentbox h1 {
+    font-family: 'Gabarito', sans-serif;
+    margin: 25px;
+}
+
+.contentbox h2 {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.contentbox p {
+    font-family: 'Gabarito', sans-serif;
+    margin: 25px;
+}
+
+/*content-button-css*/
+
+.contentbox button.back {
+    position: relative;
+    width: 7%;
+    height: 7%;
+    font-size: 10px;
+    z-index: 100;
+    background-color:#d7263d;
+}
+
+.contentbox button.back a {
+    font-size: 10px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.contentbox button {
+   height: 40px;
+   width: 200px;
+   margin: 0 0 20px 20px;
+   border-radius: 40px;
+   background-color: #d7263d;
+   color: white;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.contentbox button.link a {
+    font-size: 18px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    translate: (0, -70%);
+    top: 64%;
+}
+
+.contentbox button.link a:hover, button.back a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.contentbox button.link:hover, button.back:hover {
+    background-color: #1C5739;
+    color: white
+}

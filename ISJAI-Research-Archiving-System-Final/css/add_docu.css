@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/*Navigation of the Header*/
+
+header nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: rgb(255, 254, 254);
+}
+
+/*Size and dimensions of the header*/
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(250, 246, 246);
+    position: absolute;
+    border-bottom: 3px solid #0e0d0d;
+}
+
+/*ISJAI Logo size*/
+
+.header-page img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    margin: 15px;
+}
+
+/*Title heading size and text alignment*/
+
+.header-page h3 {
+    padding-top: 25px;
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+/*Title paragraph size and text alignment*/
+
+.header-page p {
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-top: 2px;
+}
+
+/*Navigation Icons Positioning, Color, and Sizes*/
+
+nav .icon ul {
+    position: absolute;
+    font-size: 35px;
+    right: 30px;
+}
+
+.icon ul li {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 2px;
+}
+
+.icon ul li a {
+    color:  #060606;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    background-image: url(../images/library3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    border: 3px solid rgb(61, 55, 55);
+    border-radius: 50px;
+    background-color: #d7263d;
+    color: white;
+    object-fit: cover;
+}
+
+section .wrapper .login-form {
+    text-align: center;
+    align-items: center;    
+    position: relative;
+    width: 80%;
+    translate: (0, -40%);
+}
+
+section .wrapper .login-form h1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+section .wrapper .login-form .input-box i {
+    position: absolute;
+    padding-top: 18px;
+    left: 28px;
+    color: #060606;
+}
+
+section .wrapper .login-form .input-box-type i {
+    position: absolute;
+    padding-top: 40px;
+    left: 28px;
+    color: #060606;
+}
+
+.space {
+    padding-left: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+section .wrapper .login-form button {
+    background-color: #fffdfd;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 20px 0 10px;
+    width: 50%;
+    transition: 0.3s;
+}
+
+section .wrapper .login-form button:hover {
+    background-color:#1C5739;
+    color: white;
+}
+
+section .wrapper .login-form .login-register {
+    margin-top: 10px;
+    text-align: center;
+}
+
+section .wrapper .login-form .return_dash a {
+    color: #fff;
+    font-weight: 900;
+}
+
+section .wrapper .login-form .return_dash a:hover {
+    color: #1C5739;
+    font-weight: 900;
+}
+
+section .login-form .input-box {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+section .login-form .input-box-desc {
+    width: 98%;
+    height: 150px;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+section .login-form .input-box-desc i {
+    position: absolute;
+    padding-top: 10px;
+    left: 28px;
+    color: #060606;
+}
+
+section .login-form .input-box-desc textarea {
+    width: 100%;
+    min-height: 150px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 40px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 3px solid #060606;
+}
+
+section .login-form .input-box-type {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+section .login-form .input-box-type i{
+    position: relative;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section .login-form .input-box input {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(23, 18, 18);
+}
+
+section .login-form .input-box-type label {
+    margin: 60px auto;
+    font-size: 20px;
+    width: 100%;
+    height: 35px;
+} 
+
+section .login-form .input-box-type input {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    margin: 30px 10px 0 10px;
+    border-radius: 40px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(23, 18, 18);
+} 
+
+section .login-form .login-register a:hover {
+    color: #1C5739;
+} 
+
+section .return_dash p {
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+/*Footer positioning and size*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid #61111c;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+/*Footer text positioning and size*/
+
+/*Social media icons positioning, size, and color*/
+
+.social-media {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+
+.social-media ul {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.social-media ul li {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+}
+
+.social-media i {
+    color: #d7263d;
+}
+
+.social-media i:hover {
+    color: #1C5739;
+}
+
+.quote h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.quote p {
+    font-size: 12px;
+    margin-top: 3px;
+}

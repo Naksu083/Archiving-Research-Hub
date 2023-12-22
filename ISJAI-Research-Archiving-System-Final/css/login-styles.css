@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Inter:wght@500&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Navigation of the Header*/
+
+header nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: rgb(255, 254, 254);
+}
+
+/*Size and dimensions of the header*/
+
+.header-page {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(250, 246, 246);
+    position: absolute;
+    border-bottom: 3px solid #0e0d0d;
+}
+
+/*ISJAI Logo size*/
+
+.header-page img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    margin: 15px;
+}
+
+/*Title heading size and text alignment*/
+
+.header-page h3 {
+    padding-top: 25px;
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+/*Title paragraph size and text alignment*/
+
+.header-page p {
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding-top: 2px;
+}
+
+/*Navigation Icons Positioning, Color, and Sizes*/
+
+nav .icon ul {
+    position: absolute;
+    font-size: 35px;
+    right: 30px;
+}
+
+.icon ul li {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 2px;
+}
+
+.icon ul li a {
+    color:  #060606;
+}
+
+/*Main Section-Background Picture*/
+
+.main {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(../images/library3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Container of the Login Form*/
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 550px;
+    margin: auto;
+    border: 3px solid rgb(61, 55, 55);
+    border-radius: 50px;
+    background-color: #d7263d;
+    color: white;
+}
+
+section .wrapper .login-form {
+    text-align: center;
+    align-items: center;    
+    position: relative;
+    width: 80%;
+    translate: (0, -40%);
+}
+
+section .wrapper .login-form h1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+section .wrapper .login-form .input-box-pass {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    border-radius: 40px;
+    margin: 15px auto;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+section .wrapper .login-form .input-box-pass i {
+    font-size: 20px;
+    position: absolute;
+    padding: 5px 0 0 25px;
+    color: #060606;
+}
+
+section .wrapper .login-form .input-box-pass input {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0 5px 15px;
+    border-radius: 40px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(23, 18, 18);
+    font-family: 'Poppins', sans-serif;
+}
+
+section .wrapper .login-form .input-box-pass img {
+    cursor: pointer;
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+    width: 20px;
+}
+
+/*Login icons positioning, color, hover behavior and sizes*/
+
+section .wrapper .login-form .input-box i {
+    position: absolute;
+    padding-top: 18px;
+    left: 28px;
+    color: #060606;
+}
+
+section .wrapper .login-form .input-box-type i {
+    position: absolute;
+    padding-top: 40px;
+    left: 28px;
+    color: #060606;
+}
+
+section .wrapper .login-form button {
+    background-color: #fffdfd;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 80px 0 10px;
+    width: 50%;
+    transition: 0.3s;
+}
+
+section .wrapper .login-form button:hover {
+    background-color: #1C5739;
+    color: #e9e3e6;
+}
+
+section .wrapper .login-form .login-register {
+    margin-top: 30px;
+    text-align: center;
+}
+
+section .wrapper .login-form .login-register a {
+    color: #e9e3e6;
+    font-weight: 900;
+}
+
+section .login-form .input-box {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+section .login-form .input-box-type {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+section .login-form .input-box-type i{
+    position: relative;
+    font-size: 20px;
+    margin-top: 62px;
+}
+
+section .login-form .input-box input {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 40px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(23, 18, 18);
+    font-family: 'Poppins', sans-serif;
+}
+
+section .login-form .input-box-type input {
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    margin: 30px 10px 0 10px;
+    border-radius: 40px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(23, 18, 18);
+    font-family: 'Poppins', sans-serif;
+} 
+
+section .login-form .login-register a:hover {
+    color: #1C5739;
+} 
+
+/*Space in the input box*/
+
+.space {
+    padding-left: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*Footer positioning and size*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid #61111c;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+/*Social media icons positioning, size, and color*/
+
+.social-media {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+
+.social-media ul {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.social-media ul li {
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+}
+
+.social-media i {
+    color: #d7263d;
+}
+
+.social-media i:hover {
+    color: #1C5739;
+}
+
+.quote h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.quote p {
+    font-size: 12px;
+    margin-top: 3px;
+}

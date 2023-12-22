@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Inter:wght@500&family=Poppins&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/*sidebar-content-css*/
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background-color: #d7263d;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo_details {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+
+.sidebar .logo_details img {
+  height: 100px;
+  width: 100px;
+  margin: 0px 0 0 10px;
+}
+
+.sidebar .logo_details .logo_name {
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0 20px;
+}
+
+.sidebar .nav_links li {
+  height: 60px;
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar .nav_links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.sidebar .nav_links li a i {
+  font-size: 20px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.sidebar .nav_links li a .link_name {
+  font-size: 16px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.sidebar .nav_links li a .link_name_user,
+.sidebar .nav_links li a i .link_name_user {
+  margin-top: 240px;
+}
+
+.sidebar .nav_links li a:hover,
+.sidebar .logo_details:hover {
+  background-color: #1e613e;
+}
+
+.sidebar.active {
+  width: 60px;
+}
+
+.sidebar.active .logo_details img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 0 0 15px;
+}
+
+.sidebar.active ~ .dashboard, 
+.sidebar.active ~ .strands {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+/*dashboard-content-css*/
+
+.dashboard {
+  background: #ffffff;
+  position: relative;
+  min-height: 100vh;;
+  width: calc(100% - 260px);
+  left: 260px;
+  transition: all 0.5s ease;
+}
+
+.dashboard nav {
+  height: 150px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard .menu {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.dashboard nav .menu .dashboard-admin {
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+.dashboard nav .menu i {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dashboard nav .search-box {
+  height: 50px;
+  width: 550px;
+  margin: 0 20px;
+  position: relative;
+  object-fit: cover;
+}
+
+.dashboard nav .search-box input {
+  position: absolute;
+  height: 80%;
+  width: 98%;
+  border-radius: 20px;
+  padding: 0 25px;
+  font-size: 17px;
+  color: #000000;
+  background-color: aliceblue;
+  border: 2px solid #000000;
+}
+
+.dashboard nav .search-box .bx-search {
+  position: absolute;
+  right: 1px;
+  top: 40%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  background-color: #d7263d;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.dashboard nav .search-box i:hover {
+  background-color: #1e613e;
+}
+
+/*strand-documents-table-css*/
+
+.strands {
+  background: #ffffff;
+  position: relative;
+  min-height: 100vh;;
+  width: calc(100% - 60px);
+  left: 60px;
+  transition: all 0.5s ease;
+  object-fit: cover;
+}
+
+section h1 .strand-details {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+section .content-table {
+  border-collapse: collapse;
+  margin: 30px 0 0 40px;
+  font-size: 0.9em;
+  min-width: 96%;
+  margin: 30px 0 30px;
+  text-align: center;
+}
+
+section .content-table thead tr {
+  background-color: #1C5739;
+  color: white;
+  padding: 30px auto;
+  font-weight: 900;
+}
+
+section .content-table thead th {
+  padding: 12px 15px;
+  width: 40%;
+}
+
+section .content-table tbody tr {
+  border-bottom: 1px solid #000000;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+section .content-table tbody tr .table {
+  font-size: 14px;
+  width: 20%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: inset 0 0 6px #1C5739;
+}
